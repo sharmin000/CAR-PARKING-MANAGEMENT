@@ -1,0 +1,94 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>User Dashboard</title>
+
+	
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="../responsive.css">
+
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/custom.js"></script>
+</head>
+</head>
+<body>
+		    <!-- .... HEADER AREA...... -->
+    <header class="header-area">
+        <div class="container">
+            <div class="logo-area col-md-7 col-sm-12 col-xs-12">
+                <h2><a href="#">Car<span>Park</span></a></h2>
+            </div>
+                                        <div class="hidden-menu">
+                                <a href="#"><span class="glyphicon glyphicon-list"></span></a>
+                            </div>
+
+            <nav class="main-menu col-md-5 col-sm-12 col-xs-12">
+
+                <ul class="nav navbar-nav custom-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="logout.php">Logout</a></li>
+                </ul>   
+
+
+            </nav>
+        </div>
+    </header>
+
+	<div class="user-area">
+		<div class="container">
+			<div class="dashboard-sidebar">
+    <ul>
+        <li><a href="index.html">Complete Your Profile</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="updateProfile.html">Update Phone Number</a></li>
+        <li><a href="registerCar.html">Register Car</a></li>
+        <li><a href="parkingDetails.html">Parking Deatils</a></li>
+        <li><a href="parkingInfo.html">Payment Status</a></li>
+        <li><a href="request.html">Request</a></li>
+    </ul>
+</div>
+
+
+			<div class="dashboard-area">
+				<div class="container">
+					<div class="profile-picture">
+						<img src="#" alt="Profile Picture">
+
+						
+					</div>
+					<div class="profile-description col-md-12 col-sm-12 col-xs-12">
+						
+						<h3 style="text-transform: lowercase;"><span style="text-transform: capitalize;color:#00000A">Email:</span> 
+						
+						<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
+							<input type="number" name="phone" value="<?php echo $phone ?>">
+							<input type="submit" value="Update" name="update">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
